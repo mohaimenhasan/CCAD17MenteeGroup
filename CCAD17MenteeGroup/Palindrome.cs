@@ -54,20 +54,17 @@ namespace CCAD17MenteeGroup
 
         public static bool IsPalinromeIke(string mystring)
         {
+            int e = mystring.Length;
+            
             for (int i = 0; i < mystring.Length; i++)
             {
-                int e = mystring[i - 1];
-
-                if (mystring[i] == e)
-                {
-                    e--;
-                    continue;
-                }
-                else
+                if(mystring[i] != mystring[e])
                 {
                     return false;
                 }
+                e--;
             }
+            return true;
         }
 
         
