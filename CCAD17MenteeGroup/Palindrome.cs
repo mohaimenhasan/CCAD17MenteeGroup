@@ -27,7 +27,7 @@ namespace CCAD17MenteeGroup
         public static bool IsPalindromeJosh(string mystring) // OTTO
         {
             StringBuilder sb = new StringBuilder(); // sb = []
-            for (int i = mystring.Length - 1; i >=0;)
+            for (int i = mystring.Length - 1; i >= 0; i--)
             {
                 sb.Append(mystring[i]); // sb= [O,T,T,O]
             }
@@ -37,11 +37,25 @@ namespace CCAD17MenteeGroup
                 return true;
             }
             return false;
+        }
+            // second solution (nerd)
+            public static bool IsPalidromeJosh2(string mystring)
+        {
 
-            // second solution
-            
-            int j = mystring.Count ;
-            int k = 0;
+
+            int j = 0;
+            int k = mystring.Length - 1;
+            while (j < k)
+            {
+                if (mystring[j] != mystring[k])
+                {
+                    return false;
+
+                    j++;
+                    k--;
+                }
+            }
+            return true;
         }
 
         public static bool IsPalindromeSadiki(string mystring)
