@@ -21,7 +21,6 @@ namespace CCAD17MenteeGroup
 
             Reversed Array starting from the 2-th element: ["apple", "banana", "elderberry", "date", "cherry"]
 
-
         Constraints
         The array fruitArray can contain up to 10^5 elements.
         Each element in fruitArray is a non-empty string.
