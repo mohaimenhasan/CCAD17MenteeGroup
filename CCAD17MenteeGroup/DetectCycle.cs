@@ -37,7 +37,7 @@
         public bool HasCycle(ListNode head)
         {
             // Implementation goes here
-            return true;
+            throw new NotImplementedException();
         }
     }
 }
