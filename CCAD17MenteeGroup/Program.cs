@@ -4,18 +4,27 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            var sortedArray = DutchFlag.Solution([1, 1, 0, 0, 2, 1, 1, 2]);
-            Console.WriteLine(sortedArray.ToString());
-        }
+            // Stack, Queue, and LinkedList implementation
+            var fruitArray = new string[] { "apple", "banana", "cherry", "date", "elderberry" };
+            int n = 2; // Remove first 2 elements
+            int k = 2; // Return the 2nd element from the remaining
 
-        public static int Divide(int a, int b)
-        {
-            if (b == 0)
+            foreach (var fruits in fruitArray)
             {
-                throw new DivideByZeroException();
+                Console.WriteLine(fruits);
             }
-            return a / b;
+
+            //var reversedFruitStack = fruitArray.ReverseUsingStack();
+            //Console.WriteLine("Reversed Array: " + string.Join(", ", reversedFruitStack));
+
+            //var remainingFruits = fruitArray.RemoveUsingQueue(n);
+            //Console.WriteLine("Remaining Array after removing first " + n + " elements: " + string.Join(", ", remainingFruits));
+
+            //var kthElement = fruitArray.GetKthElementUsingLinkedList(k);
+            //Console.WriteLine("The " + k + "-th element in the remaining array is: " + kthElement);
+
+            //var rotatedArray = fruitArray.RotateFruitArrayUsingLinkedList(k);
+            //Console.WriteLine($"Rotated Array: {string.Join(", ", rotatedArray)}");
         }
     }
 }
