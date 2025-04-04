@@ -6,18 +6,17 @@
         {
             // Stack, Queue, and LinkedList implementation
             var fruitArray = new string[] { "apple", "banana", "cherry", "date", "elderberry" };
-            int n = 2; // Remove first 2 elements
-            int k = 2; // Return the 2nd element from the remaining
+            int k = 2;
 
             foreach (var fruits in fruitArray)
             {
                 Console.WriteLine(fruits);
             }
 
-            //var reversedFruitStack = fruitArray.ReverseUsingStack();
+            //var reversedFruitStack = fruitArray.ReverseUsingStack(k);
             //Console.WriteLine("Reversed Array: " + string.Join(", ", reversedFruitStack));
 
-            //var remainingFruits = fruitArray.RemoveUsingQueue(n);
+            //var remainingFruits = fruitArray.RemoveUsingQueue(k);
             //Console.WriteLine("Remaining Array after removing first " + n + " elements: " + string.Join(", ", remainingFruits));
 
             //var kthElement = fruitArray.GetKthElementUsingLinkedList(k);

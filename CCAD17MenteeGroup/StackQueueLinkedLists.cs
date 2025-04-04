@@ -9,24 +9,25 @@ namespace CCAD17MenteeGroup
     public static class StackQueueLinkedLists
     {
         /*
-         * You are given an array of strings representing different fruits. 
-         * 
-         * Your task is to reverse the array using a stack and then perform the following operations:
-            Reverse the array using a stack.
+            You are given an array of strings representing different fruits and an integer k. 
+        Your task is to reverse the array starting from the k-th element using a stack.
 
-            Write a function ReverseUsingStack that takes an array of strings fruitArray and returns the reversed array. 
+            Write a function ReverseFromKUsingStack that takes an array of strings fruitArray and an integer k, 
+            and returns the array reversed starting from the k-th element.
 
-        Example:
-        Input: ["elderberry", "date", "cherry", "date", "elderberry"]
-        Output: ["elderberry", "date", "cherry", "banana", "apple"]
-        
-        Reversed Array: ["elderberry", "date", "cherry", "date", "elderberry"]
+        Example: 
+            Input: ["apple", "banana", "cherry", "date", "elderberry"], k = 2
+           Output: ["apple", "banana", "elderberry", "date", "cherry"]
+
+            Reversed Array starting from the 2-th element: ["apple", "banana", "elderberry", "date", "cherry"]
+
 
         Constraints
         The array fruitArray can contain up to 10^5 elements.
         Each element in fruitArray is a non-empty string.
+        k is a non-negative integer and less than the length of fruitArray.
          */
-        public static string[] ReverseUsingStack(this string[] fruitArray)
+        public static string[] ReverseFromKUsingStack(this string[] fruitArray, int k)
         {
             throw new NotImplementedException();
         }
